@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+</head>
+<body>
+    <div>
+        <h1>Selectors</h1>
+        <!-- Element Selector -->
+
+        <style>
+            p{
+                background-color: aquamarine;
+            }
+        </style>
+        <p>Element Selector</p>
+
+        <!-- ID Selector 
+        
+            css is added using # and you CANNOT use same id name
+             for different Element
+        -->
+
+        <style>
+            #id-select{
+                background-color: bisque;
+            }
+        </style>
+        <p id="id-select">
+            ID Selector
+        </p>
+
+    <!-- Class Selector 
+    
+        css is added using a '.' and can be used for multiple elements.
+    -->
+
+    <style>
+        .class-select{
+            background-color: blueviolet;
+            color: rgb(96, 215, 32);
+        }
+    </style>
+    <p class="class-select">
+        Class Selector
+    </p>
+
+    <!-- Universal Selector 
+    Universal selector is defined using '*' and it applies to the complete web page
+    -->
+
+
+    <style>
+        *{
+            font-family: cursive;
+            margin: 0 50px 0 50px;
+            color: violet;
+        }
+    </style>
+    <h3>This is an example of Universal selector</h3>
+
+    <!-- Multiple/Group selectors -->
+     <style>
+        p,#id-select,.class-select{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+     </style>
+     <p>This is an example of Multiple/group selectors</p>
+    </div>
+
+    <!-- Attribute selector -->
+     <h2>This is an example of attribute selector</h2>
+     <input type="text" name="" id="name" placeholder="Enter your name">
+     <input type="number">
+     <style>
+        input[type="text"]{
+            background-color: rgb(26, 3, 3);
+            color: rgb(237, 31, 31);
+            border-radius: 5px;
+        }
+
+        input::placeholder{
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           padding: 10px;
+           color: rgb(25, 121, 206);
+        }
+
+        input[type="number"]{
+            font-family: 'Times New Roman', Times, serif;
+            color:rgba(0,234,123, 0.8) ;
+        }
+    </style>
+
+    <style>
+        .transform{
+            background-color: blanchedalmond;
+            height: 200px;
+            width: 200px;
+            
+        }
+
+        .transform:hover{
+            transform: scale(1.2,1.2);
+            border-radius: 10%;
+            transition-delay: 0.1s;
+        }
+    </style>
+    <div class="transform">
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, odio!</h4>
+    </div>
+
+    <!-- Descendent Selectors -->
+
+
+    <style>
+        .container .des-selctor{
+
+            background-color: tan;
+            width: 300px;
+            height: 350px;
+        
+        }
+        
+
+        .des-selctor img{
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+        }
+
+        .des-selctor h4{
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+        }
+
+        .des-selctor p {
+            color: rgb(16, 16, 17);
+            background-color: bisque;
+            font-size: 10px;
+        }
+    </style>
+    <div class="container">
+        <div class="des-selctor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJueFJbWZteuP9PNOL41Oj5s0rkR3mUbYAFA&s" alt="alt-image">
+            <h4>This is an example of descendent selector</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, doloremque.</p>
+        </div>
+    </div>
+
+    <!-- Child Selector -->
+
+    <style>
+        .child-select{
+            background-color: brown;
+            width: 400px;
+            height: 400px;
+        }
+
+        .child-select > h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgba(244, 146, 146, 0.346);
+        }
+
+        .child-select > h3{
+            font-family: sans-serif;
+            color: aqua;
+        
+        }
+    </style>
+    <div class="child-select">
+        <h2>This is an example of child selector</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+    </div>
+</body>
+</html>
