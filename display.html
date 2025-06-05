@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <div>
+        <!-- Display in CSS -->
+
+        <!-- 
+            display:block
+            display:inline
+            display:inline-block
+            display:flex
+            display:none
+        -->
+
+        <div>
+            <h1>Display Block</h1>
+
+            <div style="background-color: antiquewhite;
+                        width: 200px;
+                        height: 200px;
+                        margin: 20px;
+                        display: block;">
+                div1
+            </div>
+
+            <div style="background-color: rgb(224, 19, 77);
+                        width: 200px;
+                        height: 200px;
+                        margin: 20px;
+                        display: block;">
+                div2
+            </div>
+
+            <div style="background-color: rgb(9, 147, 233);
+                        width: 200px;
+                        height: 200px;
+                        margin: 20px;
+                        display: block;">
+                div3
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <div>
+            <h1>Display Inline</h1>
+
+            <div style="background-color: antiquewhite;
+                        width: 200px;
+                        height: 200px;
+                        display: inline;">
+                div1
+            </div>
+
+            <div style="background-color: rgb(224, 19, 77);
+                        width: 200px;
+                        height: 200px;
+                        margin: 20px;
+                        display: inline;">
+                div2
+            </div>
+
+            <div style="background-color: rgb(9, 147, 233);
+                        width: 200px;
+                        height: 200px;
+                        display: inline;">
+                div3
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <div>
+            <h1>Display Inline-Block</h1>
+
+            <div style="background-color: antiquewhite;
+                        width: 200px;
+                        height: 200px;
+                       
+                        display: inline-block;">
+                div1
+            </div>
+
+            <div style="background-color: rgb(224, 19, 77);
+                        width: 200px;
+                        height: 200px;
+                        margin: 20px;
+                        display: inline-block;">
+                div2
+            </div>
+
+            <div style="background-color: rgb(9, 147, 233);
+                        width: 200px;
+                        height: 200px;
+                        
+                        display: inline-block;">
+                div3
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <div style="display: flex;">
+            
+            <h1>Display Flex</h1>
+
+            <div style="background-color: antiquewhite;
+                        width: 200px;
+                        height: 200px;
+                        margin: 20px;
+                        ">
+                div1
+            </div>
+
+            <div style="background-color: rgb(224, 19, 77);
+                        width: 200px;
+                        height: 200px;
+                        margin: 50px;
+                        ">
+                div2
+            </div>
+
+            <div style="background-color: rgb(9, 147, 233);
+                        width: 200px;
+                        height: 200px;
+                        margin: 20px;
+                        display: block;">
+                div3
+            </div>
+        
+        </div>
+
+        <br>
+        <br>
+        <hr>
+
+        <style>
+            .div1{
+                background-color: aquamarine;
+                width: 200px;
+                height: 300px;
+                text-align: center;
+                margin: 20px;
+            }
+
+            .div1 img{
+                width: 150px;
+                height: 150px;
+            }
+
+            .div2{
+                background-color: rgb(140, 156, 150);
+                width: 200px;
+                height: 300px;
+                text-align: center;
+                margin: 20px;
+            }
+
+             .div2 img{
+                width: 150px;
+                height: 150px;
+            }
+        </style>
+        <div style="display: flex;">
+            <div class="div1">
+                <p>This is before image</p>
+                <img src="https://cms.lamzing.com/uploads/react_logo_3x_4f46ce3352.svg" alt="" style="display: none;">
+                <p>This is after image</p>
+            </div>
+
+            <div class="div2">
+                <p>This is before image</p>
+                <img src="https://cms.lamzing.com/uploads/react_logo_3x_4f46ce3352.svg" alt="" style="visibility: hidden;">
+                <p>This is after image</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
