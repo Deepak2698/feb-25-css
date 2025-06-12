@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+</head>
+<body>
+    <div>
+        <!-- 2D Tranform -->
+
+        <!-- 
+            scale
+            translate
+            rotate
+            skew
+            matrix
+        -->
+
+
+        <div class="container">
+
+            <h1>2D Tranform </h1>
+
+            <hr>
+            <hr>
+<br>
+<br>
+
+
+            <style>
+                .scale{
+                    
+                    background-color: antiquewhite;
+                    width: 200px;
+                    height: 200px;
+                    
+                }
+
+                .scale:hover{
+                    transform: scale(1.2,1.2);
+                    background-color: blue;
+                    
+                }
+            </style>
+
+            <div class="scale">
+                This is scale effect
+            </div>
+
+            <hr>
+            <br>
+            <hr>
+
+            <style>
+                .translate{
+                    
+                    background-color: antiquewhite;
+                    width: 200px;
+                    height: 200px;
+                    
+                }
+
+                .translate p{
+                    display: none;
+                }
+
+                .translate:hover{
+                    transform: translate(100px,100px);
+                    background-color: rgb(172, 172, 211);
+                    width: 400px;
+                    
+                }
+
+                .translate:hover >p{
+                    display: initial;
+                }
+
+                
+
+                 
+            </style>
+
+            <div class="translate">
+                This is translate effect
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus ducimus ex cumque itaque distinctio inventore, eligendi ipsum corrupti. Quibusdam deleniti hic, nesciunt unde est quod? Et accusamus dolor voluptatem? Voluptate?</p>
+            </div>
+        </div>
+
+        <hr>
+        <br>
+        <hr>
+        <br>
+
+            <style>
+                .rotate{
+                    
+                    background-color: antiquewhite;
+                    width: 200px;
+                    height: 100px;
+                    
+                }
+
+                .rotate:hover{
+                    transform: rotate(180deg);
+                    background-color: blue;
+                    
+                }
+            </style>
+
+            <div class="rotate">
+                This is rotate effect
+            </div>
+
+
+            <br>
+            <hr>
+            <br>
+            <hr>
+            <br>
+            <style>
+                .skew{
+                    
+                    background-color: antiquewhite;
+                    width: 200px;
+                    height: 200px;
+                    
+                }
+
+                .skew:hover{
+                    transform: skew(10deg,20deg);
+                    background-color: rgb(255, 0, 0);
+                    
+                }
+            </style>
+
+            <div class="skew">
+                This is skew effect
+            </div>
+
+            <br>
+            <hr>
+            <br>
+            <hr>
+            <br>
+
+         <!-- 
+            Matrix
+                - It is used for all the 2D transform methods to be used all at once.
+                - SYNTAX
+                    matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+        -->
+
+        <style>
+            .matrix {
+                background-color: rgb(255, 47, 200);
+                width: 200px;
+                height: 100px;
+                margin: 50px;
+            }
+
+            .matrix:hover {
+                transform: matrix(2, 1, 1, 2, 100, 100);
+            }
+        </style>
+
+        <div class="matrix">
+            On hover the box, it combines all the 2D transform methods.
+        </div>
+
+        <br>
+        <hr>
+        <br>
+        <!-- 3D Tranform -->
+
+        <h1>3D Transform</h1>
+
+        <style>
+            .rotateX{
+                background-color: brown;
+                width: 200px;
+                height: 100px;
+            }
+
+            .rotateX:hover{
+                transform: rotateX(330deg);
+            }
+        </style>
+
+        <div class="rotateX">
+            This is rotation in 3D Tranform in X axis
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+         <style>
+            .rotateY{
+                background-color: rgb(108, 165, 42);
+                width: 200px;
+                height: 100px;
+            }
+
+            .rotateY:hover{
+                transform: rotateY(310deg);
+            }
+        </style>
+
+        <div class="rotateY">
+            This is rotation in 3D Tranform in X axis
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+         <style>
+            .rotateZ{
+                background-color: rgb(13, 231, 255);
+                width: 200px;
+                height: 100px;
+            }
+
+            .rotateZ:hover{
+                transform: rotateZ(180deg);
+            }
+        </style>
+
+        <div class="rotateZ">
+            This is rotation in 3D Tranform in X axis
+        </div>
+    </div>
+</body>
+</html>
